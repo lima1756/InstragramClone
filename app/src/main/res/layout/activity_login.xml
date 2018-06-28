@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ivanmorett.loginactivity.LoginActivity"
+    android:background="@drawable/background"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/bad_script"
+        android:text="Instagram"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@android:color/background_light"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="301dp"
+        android:layout_height="55dp"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/textbox_background"
+        android:ems="10"
+        android:hint="   Password"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#dddddd" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="297dp"
+        android:layout_height="55dp"
+        android:layout_alignEnd="@+id/button"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/textbox_background"
+        android:ems="10"
+        android:hint="   Username"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#DDDDDD" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="299dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_background"
+        android:onClick="clickedSomething"
+        android:text="Log In"
+        android:textColor="#50FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:layout_alignTop="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:text="OR"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="Forgot your login details? Get help signing in."
+
+        android:textColor="#FFFFFF"
+        android:textSize="11sp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="387dp"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:background="#30FFFFFF" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="143dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignTop="@+id/textView2"
+        android:background="#FFFFFF" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="143dp"
+        android:layout_height="1dp"
+
+        android:layout_above="@+id/imageView"
+        android:layout_toStartOf="@id/textView2"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view2"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_marginBottom="57dp"
+        android:text="Log in with Facebook"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="429dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="29dp"
+        android:layout_height="31dp"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignStart="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/view2"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="29dp"
+        app:srcCompat="@drawable/facebook_logo" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/view2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Don't have an account? Sign up."
+        android:textColor="#FFFFFF"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignTop="@+id/textView3"
+        android:background="@drawable/transparent_background"
+        android:onClick="clickedSomething" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignTop="@+id/imageView"
+        android:background="@drawable/transparent_background"
+        android:onClick="clickedSomething" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_marginEnd="9dp"
+        android:background="@drawable/transparent_background"
+        android:onClick="clickedSomething" />
+
+</RelativeLayout>
